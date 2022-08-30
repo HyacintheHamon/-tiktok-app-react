@@ -2,7 +2,7 @@ import "./App.css";
 
 function App() {
   const CLIENT_KEY = "awrg96l9zg7rhvmk";
-  const SERVER_ENDPOINT_REDIRECT = "https://mono.credit/";
+  const SERVER_ENDPOINT_REDIRECT = "https://mono.credit/auth/tiktok";
   const csrfState = Math.random().toString(36).substring(2);
 
   let url = "https://www.tiktok.com/auth/authorize/";
