@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./TikTok.css";
 
 function TikTok() {
@@ -15,23 +16,23 @@ function TikTok() {
 
   return (
     <div className="App">
-      <div className="tiktok-login-btn">
+      <a href={url} className="tiktok-login-btn">
         <img src="/tiktok-icon.svg" className="tiktok-icon" alt="tiktok icon" />
-        <div href={url} className="tiktok-login-btn-text">
-          <a href={url}>Sign In with TikTok</a>
+        <div className="tiktok-login-btn-text">
+          <a>Sign In with TikTok</a>
         </div>
-      </div>
+      </a>
       <div className="separator" />
-      <div className="tiktok-login-btn dark">
+      <a href={url} className="tiktok-login-btn dark">
         <img
           src="/tiktok-icon-white.svg"
           className="tiktok-icon"
           alt="tiktok icon"
         />
-        <div className="tiktok-login-btn-text" href={url}>
-          <a href={url}>Sign In with TikTok</a>
+        <div className="tiktok-login-btn-text">
+          <a>Sign In with TikTok</a>
         </div>
-      </div>
+      </a>
     </div>
   );
 }
